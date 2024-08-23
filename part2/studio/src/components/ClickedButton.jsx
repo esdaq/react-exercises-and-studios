@@ -1,5 +1,12 @@
 function ClickedButton() {
-  return;
+  function handleClick() {
+    alert("You are removing this button!");
+  }
+  return (
+    <button id="clickedButton" onClick={handleClick}>
+      Save
+    </button>
+  );
 }
 
 export default ClickedButton;
